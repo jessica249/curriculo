@@ -11,9 +11,7 @@ h1,h2,p,ul,li,a:-webkit-any-link{
     list-style: none;
     color: unset;
 }
-img{
-    border-radius: 100%;
-}
+
 
 body{
     font-family: 'roboto',sans-serif;
@@ -33,9 +31,9 @@ figure{
     padding: 20px;
 }
 
-figure img{
+img{
     width: 100%;
-    border: 160%;
+    border-radius: 50%; 
 }
 
 section{
@@ -54,13 +52,14 @@ p{
 
 .card-container{
     display: flex;
+    flex-wrap: wrap;
     grid-gap: 10px;
-    justify-content: space-between;
-}
+    justify-content: center;
+   }
 
 .card {
     border: 1px solid #BDC1CA;
-    border-radius: 6px;
+    border-radius: 8px;
     padding: 20px;
 }
 
@@ -75,4 +74,10 @@ p{
 }
 .mdi{
     font-size: 30px;
+}
+
+@media(max-width:960px){
+    main {
+        width: 94vw;
+    }
 }
